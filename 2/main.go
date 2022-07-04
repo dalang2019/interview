@@ -37,6 +37,7 @@ func main() {
 
 func init() {
 	conn, _ := redis.Dial("127.0.0.1", "6379")
+	RedisClient = &Client{}
 	RedisClient.conn = conn
 }
 
